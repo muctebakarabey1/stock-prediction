@@ -9,7 +9,7 @@ last_Cumulative_Volume = 36805900.826118246
 print("Max Cumulative_Volume: {}".format(last_Cumulative_Volume))  # Print the last Cumulative_Volume value
 
 # Step 2: Build the query to get data from PostgreSQL where Cumulative_Volume > last Cumulative_Volume
-query = f"SELECT * FROM bitcoin_2025 WHERE Cumulative_Volume > {last_Cumulative_Volume}"
+query = f"SELECT * FROM bitcoin_2025 WHERE cumulative_volume > {last_Cumulative_Volume}"
 
 # Step 3: Read data from PostgreSQL using the query
 new_data = spark.read.format("jdbc") \

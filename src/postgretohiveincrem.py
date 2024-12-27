@@ -12,7 +12,7 @@ last_Cumulative_Volume = 36805900.826118246
 print("Max Cumulative_Volume: {}".format(last_Cumulative_Volume))  # Using format() for compatibility
 
 # Step 2: Build the query to get data from PostgreSQL where Cumulative_Volume > last Cumulative_Volume
-query = "SELECT * FROM bitcoin_2025 WHERE Cumulative_Volume > {}".format(last_Cumulative_Volume)
+query = "SELECT * FROM bitcoin_2025 WHERE cumulative_volume > {}".format(last_Cumulative_Volume)
 
 
 
